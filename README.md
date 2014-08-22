@@ -1,7 +1,7 @@
 svg_queries
 ===========
 
-## Playing with SVG and modifying elements internally when presented with media queries.
+### Playing with SVG and modifying elements internally when presented with media queries.
 
 [Joe Harrison's][joe] [Responsive Logos][resplogos] is an interesting experiment involving SVG sprites and a responsive layout. Related to his [Responsive Icons Project][rip] it demonstrates how a logo might change at different screen sizes. Elements adjusting and shrinking to fit the space. 
 
