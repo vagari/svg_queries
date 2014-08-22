@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Playing with the Disney Logo in SVG</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <!--//<link rel="stylesheet" href="css/normalize.css">//-->
+        <style>
+        body {
+        	background-color: #282525;
+        	font: 1em sans-serif;
+        	color: #eee;
+        	
+        	
+        	text-align: center;
+        }
+        
+        div {
+        	display: block;
+        	margin: 0 auto;
+        	width: 50%;
+        }
+        
+        object {
+        	display: inline-block;
+        	max-width: 100%;
+        }        
+        
+        
+        @media only screen and (min-width: 1em) {
+			body {color: #eeeeee;}
+		}
+		
+		@media only screen and (min-width: 30em) {
+			body {color: #eeeeee;}
+		}
+		
+		@media only screen and (min-width: 40em) {
+			body {color: #000000;}
+		}
+		
+		@media only screen and (min-width: 60em) {
+			body {color: #ffffff;}
+		}
+		
+		#block {
+			padding-left: 50%;
+			margin-left: -150px;
+			z-index: -1;
+			height: 310px;
+			padding-top: 10px;
+			
+		}
+		
+		.logo8 {
+		  width: 300px;
+		  height: 300px;
+		  background: url(./logo8.svg);
+		  background-position: -900px 0px;
+		}
+		
+		@media only screen and (min-width: 15em) {
+			.logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8 {background-position: left -900px;}
+		}
+		
+		@media only screen and (min-width: 28em) {
+			.logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8 {background-position: left -600px;}
+		}
+		
+		@media only screen and (min-width: 45em){
+			.logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8 {background-position: left -300px;}
+		}
+		
+		@media only screen and (min-width: 60em){
+			.logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8 {background-position: left 0px;}
+		 }
+		
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+		
+		<div>
+		
+			<object type="image/svg+xml" data="Guinness.svg" class="logo">
+				Guinness <!-- fallback image in CSS -->
+  			</object>
+			
+		</div>
+		<!--//<div>
+			
+			<div><object type="image/svg+xml" data="Guinness copy.svg" class="logo">
+			  Kiwi Logo 
+			</object></div>
+			
+		</div>
+		<div>
+			
+			<div><div><object type="image/svg+xml" data="Guinness.svg" class="logo">
+			  Kiwi Logo 
+			</object></div></div>
+		
+		</div>
+		
+		<div>
+			
+			<div><div><div><object type="image/svg+xml" data="Guinness.svg" class="logo">
+			  Kiwi Logo
+			</object></div></div></div>
+		
+		</div>//-->
+		
+		<div style="background-color:#282525"> 
+			<div id="block">
+				<div class='logo8'></div>
+			</div>
+		</div>
+		
+    </body>
+</html>
