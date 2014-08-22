@@ -12,8 +12,26 @@
         	background-color: #282525;
         	font: 1em sans-serif;
         	color: #eee;
-        	
+        	padding: .5em;
+        	        	
         	text-align: center;
+        }
+        
+        h1 {
+        	display: inline-block;
+        	font-size: 1.2em;
+        	line-height: 1.8em;
+	    	font-weight: 400;
+        }
+        
+        footer {
+        	margin-top: 2em;
+	        font-size: .875em;
+        }
+        
+        a {
+	        color: #eee;
+	        
         }
         
         div {
@@ -25,23 +43,28 @@
         object {
         	display: inline-block;
         	max-width: 100%;
-        }        
+        }
+        
+        @media screen and (min-width: 40em) {
+			h1 {
+				margin: -3em 0 0;
+				font-size: 1.8em;
+			}
+		}
 
         </style>
     </head>
     <body>
-
+		
 		<div>
-		
-			<h1></h1>
-		
 			<object type="image/svg+xml" data="Guinness.svg" class="logo">
 				Guinness Logo
   			</object>
-  			
-  			<p></p>
-			
 		</div>
+		
+		<h1>SVG Using Internal Media-Queries</h1>
+		
+		<footer><small>A variation on <a href="http://www.joeharrison.co.uk/">Joe Harrison's</a> <a href="http://www.responsivelogos.co.uk/">Responsive Logos</a>.</small></footer>
 		
     </body>
 </html>
