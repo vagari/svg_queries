@@ -13,30 +13,30 @@
 	.harp-color{fill:#ca983a;}
 	
 	@media screen and (min-width: 1px) {
-		#base-harp, #guinness, #date, #draught {
-			opacity: 0;
+		#base-harp, #guinness, #stamp, #draught {
+			display: none;
 		}
 	}
 	
 	@media screen and (min-width: 210px) {
 		#big-harp {
-			opacity: 0;
+			display: none;
 		}
 			
 		#base-harp, #guinness {
-			opacity: 1;
+			display: block;
 		}
 	}
 	
 	@media screen and (min-width: 345px) {
-		#date {
-			opacity: 1;
+		#stamp {
+			display: block;
 		}
 	}
 	
 	@media screen and (min-width: 465px) {
 		#draught {
-			opacity: 1;
+			display: block;
 		}
 	}
 	
@@ -96,7 +96,7 @@
 	<polygon class="bars harp-color" points="126.43,130.86 36.98,130.86 125.72,128.41 	"/>
 	<polygon class="bars harp-color" points="175.54,128.76 259.02,130.86 174.48,130.86 	"/>
 </g>
-<g id="date">
+<g id="stamp">
 	<path class="letter-color" d="M264.28,198.91c0-2.1,1.75-3.51,3.86-3.51c2.1,0,3.86,1.4,3.86,3.51c0,2.11-1.75,3.51-3.86,3.51
 		C266.04,202.42,264.28,201.02,264.28,198.91L264.28,198.91z M264.99,198.91c0,1.76,1.4,2.81,3.16,2.81c1.75,0,3.16-1.05,3.16-2.81
 		c0-1.75-1.4-2.81-3.16-2.81C266.39,196.1,264.99,197.16,264.99,198.91L264.99,198.91z M269.89,200.67h-0.7l-1.05-1.76h-0.7v1.76
