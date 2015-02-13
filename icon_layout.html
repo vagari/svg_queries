@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Playing with the Guinness Logo in SVG</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        body {
+        	background-color: #282525;
+        	font: 1em sans-serif;
+        	color: #eee;
+        	padding: 0;
+        	        	
+        	text-align: center;
+        }
+        
+        h1 {
+        	display: inline-block;
+        	font-size: 1.2em;
+        	line-height: 1.8em;
+	    	font-weight: 400;
+        }
+        
+        footer {
+        	margin-top: 2em;
+	        font-size: .875em;
+        }
+        
+        a {
+	        color: #eee;
+	        
+        }
+        
+        div {
+        	display: block;
+        	margin: 0 auto 50px;
+        	width: 98%;
+        	max-width: 808px;
+        	
+        	
+        }
+        
+        div:after { 
+			content: "."; 
+			visibility: hidden; 
+			display: block; 
+			height: 0; 
+			clear: both;
+		}
+        
+        ul {
+	        margin: 30px 0 0;
+	        padding: 0;
+	        list-style: none;
+        }
+        
+        li {
+	        /*vertical-align: top;
+	        display: inline-block;*/
+	        float: left;
+	        margin: 0 10px 40px;
+	        padding: 0;
+	        position: relative;
+	        
+	        background-color: #555;
+			background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25)), 
+			linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25));
+			background-size:20px 20px;
+			background-position:0 0, 10px 10px
+        }
+        
+        li p {
+	        background-color: #282525;
+	        
+	        position: absolute;
+	        bottom: -40px;
+        }
+        
+        object[type="image/svg+xml"] {
+        	height: auto;
+        	width: 100%;
+        }
+        
+        @media screen and (min-width: 20em) {
+			h1 {
+				margin: -3em 0 0;
+				font-size: 1.8em;
+			}
+			
+			li {
+				margin: 0 10px 40px 0;
+			}
+		}
+
+        </style>
+    </head>
+    <body>
+		
+		<div>
+		<ul>
+			<li style="width: 512px; max-width: 100%;">
+				<object type="image/svg+xml" data="Guinness-icon.svg" class="logo">
+				Guinness Logo
+				</object>
+				
+				<p>512</p>
+  			</li>
+  			<li style="width: 256px">
+				<object type="image/svg+xml" data="Guinness-icon.svg" class="logo">
+				Guinness Logo
+				</object>
+				
+				<p>256</p>
+  			</li>
+  			<li style="width: 128px">
+				<object type="image/svg+xml" data="Guinness-icon.svg" class="logo">
+				Guinness Logo
+				</object>
+				
+				<p>128</p>
+  			</li>
+  			<li style="width: 64px">
+				<object type="image/svg+xml" data="Guinness-icon.svg" class="logo">
+				Guinness Logo
+				</object>
+				
+				<p>64</p>
+  			</li>
+  		</ul>
+  		</div>
+  		
+		<h1>SVG Using Internal Media-Queries</h1>
+		
+		<footer><small>A variation on <a href="http://www.joeharrison.co.uk/">Joe Harrison's</a> <a href="http://www.responsivelogos.co.uk/">Responsive Logos</a>.</small></footer>
+		
+    </body>
+</html>
