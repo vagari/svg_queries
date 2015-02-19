@@ -6,7 +6,7 @@
 <defs>
 <style type="text/css">
 <![CDATA[
-	@import url(svg-styles.css);
+	@import url(css/svg-styles.css);
 	
 	.letter-color{fill:#aaaaaa;}
 	.bars{stroke:#ca983a;stroke-width:1.8618;stroke-miterlimit:2.6131;}
