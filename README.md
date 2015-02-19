@@ -25,9 +25,13 @@ Originally the plan was to share this via my web site... But cleaning that up wo
 
 ### The result?
 
-By using the `object` element and modifying the underlying `svg` code it **is** definitely possible to shrink file size, reduce elements, and still function in `svg` compatible browsers. 
+By using the `object` element and modifying the underlying `svg` code it _is_ definitely possible to shrink file size, reduce elements, and still function in `svg` compatible browsers. 
 
-Considering the logo variations mostly involve removing elements it began with organizing elements and toggling them with CSS. Similar to [Jason Grigsby's, _Media Queries in SVG images_][jg]. But one thing that Joe did was switch to a larger, simpler graphic once a size had been reached. To emulate that required a bit of math and a combo of [`defs`][jjdef] and [transforms][jjtransform]. Specifically taking the harp and repositioning it, along with enlarging it, via [matrix][somatrix]. 
+Considering the logo variations mostly involve removing elements it began with organizing elements and toggling them with CSS. Similar to an example in [Jason Grigsby's _Media Queries in SVG images_][jg] objects appear/disappear as the viewport changes. One thing that's a little more complicated with the simplified version is adjusting element sizes to maximize space and keep things centered. It requires a bit of math and a combo of [`defs`][jjdef] and [transforms][jjtransform]. In this case specifically, taking the harp and repositioning/enlarging it via a [matrix][somatrix]. 
+
+### And those questions? 
+
+Well we know there's an alternative. How about the rest of the pieces? Filesize is definitely reduced. Though that is not too difficult to believe. We're stripping redundant elements and pulling out their relevant code. In the case of the Guinness logo the original file is 37 KB. The new file clocks in at 13 KB, 35% of the original. As mentioned using the `defs` and `use` features of `svg` elements can be reused. The only difficult part is that there can be a lot of extra work after exporting the graphic. 
 
 
 [somatrix]:http://stackoverflow.com/questions/6711610/how-to-set-transform-origin-in-svg (coordinate transformation - How to set transform origin in SVG - Stack Overflow)
