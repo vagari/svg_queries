@@ -3,68 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Playing with the Guinness Logo in SVG</title>
+        <title>Playing with a Responsive Guinness Logo in SVG</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/base.css">
 
-        <style>
-        body {
-        	background-color: #282525;
-        	font: 1em sans-serif;
-        	color: #eee;
-        	padding: .5em;
-        	        	
-        	text-align: center;
-        }
-        
-        h1 {
-        	display: inline-block;
-        	font-size: 1.2em;
-        	line-height: 1.8em;
-	    	font-weight: 400;
-        }
-        
-        footer {
-        	margin-top: 2em;
-	        font-size: .875em;
-        }
-        
-        a {
-	        color: #eee;
-	        
-        }
-        
-        div {
-        	display: block;
-        	margin: 0 auto;
-        	width: 50%;
-        }
-        
-        object[type="image/svg+xml"] {
-        	height: auto;
-        	width: 100%;
-        }
-        
-        @media screen and (min-width: 40em) {
-			h1 {
-				margin: -3em 0 0;
-				font-size: 1.8em;
-			}
-		}
-
-        </style>
     </head>
     <body>
+		<header>
+			<h1>SVG Using Internal Media-Queries</h1>
+			
+			<nav>
+				<ul>
+					<li><a href="icon_layout.html">Icon Style</a></li>
+					<li><a href="https://github.com/vagari/svg_queries">GitHub Project</a></li>
+				</ul>
+			</nav>
+		</header>
 		
 		<div>
 			<object type="image/svg+xml" data="Guinness.svg" class="logo">
-				Guinness Logo
+				Responsive Guinness Logo
   			</object>
 		</div>
 		
-		<h1>SVG Using Internal Media-Queries</h1>
-		
-		<footer><small>A variation on <a href="http://www.joeharrison.co.uk/">Joe Harrison's</a> <a href="http://www.responsivelogos.co.uk/">Responsive Logos</a>.</small></footer>
+		<footer><small>A variation on <a href="http://www.joeharrison.co.uk/">Joe Harrison's</a> <a href="http://www.responsivelogos.co.uk/">Responsive Logos</a>.</small><br/><small>This is not affiliated with the Guinness brand in any way.</small></footer>
 		
     </body>
 </html>
