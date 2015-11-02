@@ -87,13 +87,13 @@ object[type="image/svg+xml"] {
 	header h1 {
 		margin: 0;
 		text-align: left;
-		width: 48%;
+		width: 28%;
 	}
 	
 	header nav {
 		display: inline-block;
 		text-align: right;
-		width: 48%;
+		width: 68%;
 	}
 	
 	header a {
