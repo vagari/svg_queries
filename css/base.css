@@ -11,8 +11,12 @@ body {
 
 header {
 	display: block;
-	width: 100%;
+	width: 96%;
 	color: #333;
+	position: relative;
+	margin: 0;
+	padding: .5em 2% 0;
+	/*padding: 1em 1em 0;*/
 	
 	background: #fff; /* Old browsers 
 	background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%);
@@ -36,6 +40,9 @@ header nav ul {
 header nav li {
 	display: inline-block;
 	margin: 0;
+	padding: 0;
+
+	width: 100%;
 }
 
 header a {
@@ -44,7 +51,7 @@ header a {
     text-decoration: none;
     background-color: #eee;
     
-    border: 3px solid #bbb;
+    border: 2px solid #bbb;
     border-bottom: none;
     
     padding: 12px 8px;
@@ -83,17 +90,30 @@ object[type="image/svg+xml"] {
 	width: 100%;
 }
 
-@media all and (min-width: 40em) {
+@media all and (min-width: 46em) {
+	header {
+		padding: .5em 0 .65em;
+		width: 100%;
+	}
+
 	header h1 {
-		margin: 0;
+		margin: 0 2%;
 		text-align: left;
-		width: 28%;
+		width: 96%;
+		padding: 0;
 	}
 	
 	header nav {
 		display: inline-block;
 		text-align: right;
-		width: 68%;
+		position: absolute;
+		right: 2%;
+		bottom: 0;
+		/*width: 68%;*/
+	}
+
+	header nav li {
+		width: auto;
 	}
 	
 	header a {
@@ -105,8 +125,12 @@ object[type="image/svg+xml"] {
 	}
 }
 
-@media screen and (min-width: 20em) {
+@media screen and (min-width: 21em) {
 	li {
 		margin: 0 10px 40px 0;
+	}
+
+	header nav li {
+		width: auto;
 	}
 }
